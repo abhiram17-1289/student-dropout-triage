@@ -90,9 +90,10 @@ def plot_group_recall(table, overall_recall, path, title):
     ax.set_title(title, color=TEXT, fontsize=10, loc="left")
     _tidy(ax)
     ax.grid(axis="y", visible=False)
-    # Legend under the axis so it never covers a row.
-    ax.legend(frameon=False, fontsize=8, loc="upper center", bbox_to_anchor=(0.35, -0.14), ncol=3)
     fig.tight_layout()
+    # Legend below the whole figure, so it never covers a row or the axis label.
+    fig.legend(*ax.get_legend_handles_labels(), frameon=False, fontsize=8,
+               loc="upper center", bbox_to_anchor=(0.5, 0.0), ncol=3)
     fig.savefig(path, dpi=200, bbox_inches="tight")
     plt.close(fig)
 
