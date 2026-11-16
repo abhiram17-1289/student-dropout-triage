@@ -2,7 +2,7 @@
 **Abhirama Karthikeya Mullapudi**  
 University of Colorado, Boulder. Fall 2026.
 
-# Who should the adviser see first?
+# Who should the academic adviser see first?
 
 At the end of the first semester, an academic adviser can meet 20% of each entering class.
 This project asks whether a model picks those students better than a one-line rule:
